@@ -130,7 +130,7 @@ do
             echo -e "\nStart at $start_time, Exit at $time"
             exit
         fi
-        time=$time", start at $start_time, exit after $((DURATION - time_passed)) seconds."
+        time="$time, start at $start_time, exit after $((DURATION - time_passed)) seconds."
     fi
 
     echo -e "\n$time"
