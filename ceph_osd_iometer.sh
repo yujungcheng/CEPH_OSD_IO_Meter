@@ -113,7 +113,7 @@ do
 
         printf "%-4s %-5s %'12d  %'13d  %'18d  %'19d\n" ${OSD_PID_ID[$pid]}  $pid  $rx  $wx $t_rb $t_wb
 
-        if [[ -z $OUTPUT_FILE ]]; then
+        if [[ -n "$OUTPUT_FILE" ]]; then
             echo $time ${OSD_PID_ID[$pid]} $pid $rx $wx $t_rb $t_wb >> $OUTPUT_FILE
         fi
     done
